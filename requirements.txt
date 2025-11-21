@@ -1,0 +1,13 @@
+pdf2image
+pytesseract
+ipykernel
+sentence-transformers
+faiss-cpu
+huggingface_hub
+python-dotenv
+gradio
+ollama
+streamlit
+fastapi
+uvicorn
+requests

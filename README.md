@@ -75,10 +75,6 @@ streamlit run ui/streamlit_app.py
 python rag_cli.py "What fees and charges does the city collect?"
 ```
 
-## Env vars
-- `OLLAMA_MODEL_NAME` (default `llama3`)
-- `FASTAPI_URL` (Streamlit backend, default `http://localhost:8000/ask`)
-
 ## Code map
 - `belleville_bylaw_bot.ipynb` — build pipeline (OCR, chunk, embed, index)
 - `rag_backend.py` — shared RAG helpers

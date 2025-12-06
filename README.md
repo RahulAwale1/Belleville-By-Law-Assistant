@@ -62,15 +62,16 @@ Build data once (from the notebook):
 
 ### 1. Start the FastAPI Backend
 ```
-uvicorn backend.api:app --reload
+# from the repo root
+uvicorn fastapi_app:app --reload
 ```
 
 ### 2. Run the Streamlit UI
 ```
-streamlit run ui/streamlit_app.py
+streamlit run streamlit_app.py
 ```
 
-### 2. Running the CLI (optional):
+### 3. Running the CLI (optional):
 ```bash
 python rag_cli.py "What fees and charges does the city collect?"
 ```
@@ -100,3 +101,4 @@ _Source: By-Law 2024-201, pages 1 & 10_
 ## Notes
 - Tesseract + Poppler must be installed and on PATH for OCR.
 - Ollama daemon must be running for answers. Rebuild chunks/index if PDFs change.
+- Streamlit calls the backend at `http://localhost:8000/ask` by default; override with `FASTAPI_URL` if your FastAPI server runs elsewhere.
